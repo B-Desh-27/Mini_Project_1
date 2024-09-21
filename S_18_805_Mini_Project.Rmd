@@ -1,0 +1,24 @@
+---
+title: "S/18/805_Mini_Project"
+author: "S/18/805"
+date: "2024-04-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(skimr)
+library(corrplot)
+library(readxl)
+library(psych)
+```
+
+
+```{r}
+abalone <- read.csv("../Data/",sep=",") %>% view()
+
+```
